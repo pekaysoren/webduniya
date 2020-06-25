@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flipcart</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.dropdown
+		{
+			position:relative;
+			display:inline-block;
+		}
+		.dropdown-content 
+		{
+		  display:none;
+		  position:absolute;
+		  background-color:#e6d9cc;
+		  min-width:260px;
+		  min-height:100px;
+		  box-shadow:0px 8px 16px 0px rgba(0,0,0,2)
+		  padding:12px 16px; 
+		  color:#405ce6; 
+		  text-decoration:none;	
+		}
+		.dropdown:hover .dropdown-content
+		{
+			display:block;
+		}
+        .checked
+        {
+        	color:green;
+        }
+        .zoom
+        {
+        	transition:transform .2s; 
+        }
+        .img:hover
+        {
+        	transform: scale(1.2);
+	
+        }
+        .d1 a
+        {
+        	text-decoration:none;
+        }
+      
+
+
+
+
+	</style>
+</head>
+<body bgcolor="#f2efe6">
+	<table border="0" width="100%"  height="100px" bgcolor="#2874F0">
+	<tr>
+	  <td align="right"><img src="logo.PNG"></td>
+	  <td><input type="text" placeholder="Search for products,Brands & More" style="width:450px;height:25px;">
+	  <input type="button" value="Search"></td>
+	  <th><a href="https://www.flipkart.com/account/login?ret=/"><font color="white">Login & signup</font></a></th>
+	  <th><u><a href="#"><font color="white">More</a></font></u></th>
+	  <th><a href="https://www.flipkart.com/viewcart?otracker=Cart_Icon_Click"><img src="cart.PNG"></a></th>
+    </tr>
+</table>
+
+<table border="0" width="100%" height="70px">
+	<tr>
+		<td bgcolor="#e8c4ba"><h1><marquee behavior="alternate"><font color="#e312b9">ONLINE SHOPING</marquee></font></h1></td></tr>
+		<tr>
+			<td bgcolor="#f2bd68"><marquee direction="right"><font color="#c517cf">NEW OFFER FOR</font><a href="https://www.flipkart.com/offers-store?otracker=nmenu_offer-zone">click here</a></marquee></td>
+		</tr>
+	</tr>
+
+	
+</table>
+<table border="0" width="100%" height="45px" bgcolor="white">
+	<tr>
+		<th width="12.5%">
+			<div class="dropdown"><span>Electronics</span>
+				<div class="dropdown-content">
+				<p> <a href="https://www.flipkart.com/gaming-store?otracker=nmenu_sub_Electronics_0_Gaming%20%26%20Accessories">Accessories</a></p>
+				<p><a href="https://www.flipkart.com/wearable-smart-devices/smart-headphones/pr?sid=ajy,vam&otracker=nmenu_sub_Electronics_0_Smart%20Headphones">Earphone</a></p>
+				<p><a href="https://www.flipkart.com/mobile-accessories/cases-and-covers/pr?sid=tyy,4mr,q2u&otracker=nmenu_sub_Electronics_0_Mobile%20Cases">Mobile</a></p>
+				<p><a href="https://www.flipkart.com/laptop-accessories/mouse/pr?sid=6bo,ai3,2ay&otracker=nmenu_sub_Electronics_0_Mouse">mouse</a></p>
+				
+					
+				</div>
+			</div>
+
+         </th>
+		<th width="12.5%">
+		<div class="dropdown"><span>
+		TVs & Appliances<span>
+        .<div class="dropdown-content">
+        	<p><a href="https://www.flipkart.com/televisions/pr?sid=ckf%2Cczl&p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&otracker=categorytree&p%5B%5D=facets.serviceability%5B%5D%3Dtrue&p%5B%5D=facets.brand%255B%255D%3DLG&otracker=nmenu_sub_TVs%20%26%20Appliances_0_LG">LG</a></p>
+        	<p><a href="https://www.flipkart.com/televisions/pr?sid=ckf%2Cczl&p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&otracker=categorytree&p%5B%5D=facets.serviceability%5B%5D%3Dtrue&p%5B%5D=facets.brand%255B%255D%3DSamsung&otracker=nmenu_sub_TVs%20%26%20Appliances_0_Samsung">Samsung</a></p>
+        		<p><a href="https://www.flipkart.com/air-conditioners/pr?sid=j9e,abm,c54&p[]=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&p[]=facets.brand%255B%255D%3DHitachi&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_TVs%20%26%20Appliances_0_Hitachi">Hitachi</a></p>
+        			<p><a href="https://www.flipkart.com/apple-products-store?otracker=nmenu_sub_Electronics_0_Apple">Apple</a></p>
+        				<p><a href="https://www.flipkart.com/televisions/pr?sid=ckf%2Cczl&p%5B%5D=facets.brand%255B%255D%3DMi&otracker=categorytree&p%5B%5D=facets.serviceability%5B%5D%3Dtrue&p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&otracker=nmenu_sub_TVs%20%26%20Appliances_0_Mi">MI</a></p>
+          </div>
+        </div>
+		</th>
+		<th width="12.5%">
+	    <div class="dropdown"><span>
+		Men</span>
+		<div class="dropdown-content">
+			<p><a href="https://www.flipkart.com/mens-footwear/casual-shoes/boots~type/pr?sid=osp%2Ccil%2Ce1f&otracker=nmenu_sub_Men_0_Boots">Shoes</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/winter-wear/sweater/men-sweater/pr?sid=clo,qvw,vkb,ieq&otracker=categorytree&otracker=nmenu_sub_Men_0_Sweater">Sweater</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/topwear/tshirt/men-tshirt/pr?sid=clo,ash,ank,edy&otracker=categorytree&otracker=nmenu_sub_Men_0_T-Shirts">T-Shirt</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/bottomwear/jeans/men-jeans/pr?sid=clo,vua,k58,i51&otracker=categorytree&otracker=nmenu_sub_Men_0_Jeans">Jeans</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/winter-wear/jackets/men-jackets/pr?sid=clo,qvw,z0g,jbm&otracker=categorytree&otracker=nmenu_sub_Men_0_Jackets">Jacket</a></p>
+			
+		</div>
+		</div>
+	   </th>
+		<th width="12.5%">
+			<div class="dropdown"><span>
+		Women</span>
+		<div class="dropdown-content">
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/ethnic-wear/salwar-and-patiala/women-salwar-and-patiala/pr?sid=clo,cfv,1n0,ops&otracker=categorytree&otracker=nmenu_sub_Women_0_Salwars%20%26%20Patiala">Shuit</a></p>
+			<p><a href="https://www.flipkart.com/jewellery/silver-jewellery/pr?sid=mcr,tfz&otracker=nmenu_sub_Women_0_Silver%20Jewellery">jullery</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/saree-and-accessories/saree/women-saree/pr?sid=clo,8on,zpd,9og&otracker=categorytree&otracker=nmenu_sub_Women_0_Sarees">Sarees</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/saree-and-accessories/blouse/women-blouse/pr?sid=clo,8on,5n9,hny&otracker=categorytree&otracker=nmenu_sub_Women_0_Blouse">Blouse</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/ethnic-wear/kurtas/women-kurtas-and-kurtis/pr?sid=clo,cfv,cib,rkt&q=kurtas+kurtis&otracker=categorytree&otracker=nmenu_sub_Women_0_Kurtas%20%26%20Kurtis">Kurti</a></p>
+			</div>
+			</div>
+	   </th>
+		<th width="12.5%">
+			<div class="dropdown">
+		Baby & Kids
+		<div class="dropdown-content">
+			<p><a href="https://www.flipkart.com/baby-care/baby-oral-care/pr?sid=kyh,ga0&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Baby%20%26%20Kids_0_Baby%20Oral%20Care">Baby oral care</a></p>
+			<p><a href="https://www.flipkart.com/sunglasses/pr?sid=26x&p%5B%5D=facets.ideal_for%255B%255D%3DBoys&otracker=categorytree&p%5B%5D=facets.ideal_for%255B%255D%3DGirls&p%5B%5D=facets.ideal_for%255B%255D%3DBoys%2B%2526%2BGirls&p%5B%5D=facets.serviceability%5B%5D%3Dtrue&otracker=nmenu_sub_Baby%20%26%20Kids_0_Kids%27%20Sunglasses&otracker=nmenu_sub_Baby%20%26%20Kids_0_Kids%27%20Sunglasses">Kids' Sunglasses</a></p>
+			<p><a href="https://www.flipkart.com/baby-care/baby-food/pr?sid=kyh,arw&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Baby%20%26%20Kids_0_Baby%20Food">Baby Food</a></p>
+			<p><a href="https://www.flipkart.com/baby-care/strollers-activity-gear/pr?sid=kyh,5mt&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Baby%20%26%20Kids_0_Baby%20Gear">Baby Gear</a></p>
+			<p><a href="https://www.flipkart.com/clothing-and-accessories/winter-wear/jackets/kids-jackets/pr?sid=clo,qvw,z0g,0vw&otracker=categorytree&otracker=nmenu_sub_Baby%20%26%20Kids_0_Boys%27%20Jacket">Boys' Jacket</a></p>
+		</div>
+	</div>
+	    </th>
+		<th width="12.5%">
+	    <div class="dropdown">
+		Home & Furniture
+		<div class="dropdown-content">
+			<p><a href="https://www.flipkart.com/beds/pr?sid=wwe,7p7&otracker=nmenu_sub_Home%20%26%20Furniture_0_Beds">Beds</a></p>
+			<p><a href="https://www.flipkart.com/furniture/dining-tables-sets/pr?sid=wwe,ur9&otracker=nmenu_sub_Home%20%26%20Furniture_0_Dining%20Tables%20%26%20Chairs">Dining Tables & Chairs</a></p>
+			<p><a href="https://www.flipkart.com/home-furnishing/bed-linen-blankets/bedsheets/pr?sid=jra,knw,qcw&marketplace=FLIPKART&otracker=nmenu_sub_Home%20%26%20Furniture_0_Bedsheets">Bedsheet</a></p>
+			<p><a href="https://www.flipkart.com/home-furnishing/bed-linen-blankets/blankets/pr?sid=jra,knw,llw&marketplace=FLIPKART&otracker=nmenu_sub_Home%20%26%20Furniture_0_Blankets">Blanket</a></p>
+			<p><a href="https://www.flipkart.com/kitchen-cookware-serveware/lunch-boxes-bottles-and-flasks/water-bottles/pr?sid=upp%2Cf2k%2C0zz&otracker=nmenu_sub_Home%20%26%20Furniture_0_Water%20Bottles"></a>Water Bottle</p>
+
+		</div>
+	    </th>
+		<th width="12.5%">
+		<div class="dropdown">
+		Sports,Books & More
+		<div class="dropdown-content">
+			<p><a href="https://www.flipkart.com/sports/cricket/pr?sid=abc,5lf&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Sports%2C%20Books%20%26%20More_0_Cricket">Cricket</a></p>
+			<p><a href="https://www.flipkart.com/sports/football/pr?sid=abc,gxg&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Sports%2C%20Books%20%26%20More_0_Football">Football</a></p>
+			<p><a href="https://www.flipkart.com/sports/badminton/pr?sid=abc,egs&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Sports%2C%20Books%20%26%20More_0_Badminton">Badmintan</a></p>
+			<p><a href="https://www.flipkart.com/sports/swimming/pr?sid=abc,byq&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Sports%2C%20Books%20%26%20More_0_Swimming">Swiming</a></p>
+			<p><a herf="https://www.flipkart.com/sports/cycling/pr?sid=abc,ulv&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Sports%2C%20Books%20%26%20More_0_Cycling">Cycling</a></p>
+		</div>
+		</div>
+	    </th>
+		<th width="12.5%">
+			<div class="d1">
+        <a href="https://www.flipkart.com/offers-store?otracker=nmenu_offer-zone">
+		Offer Zone
+		</a></div></div>
+	</th>
+   </tr>
+</table>
+<img src="banner.jfif" width="100%" height="250px"><br><br>
+<table border="0" width="100%" bgcolor="#dee6cf">
+	<tr>
+		<th colspan="5" align="right"><b><font color="green"><a href="https://www.flipkart.com/offers-list/best-of-electronic-devices?screen=dynamic&pk=themeViews%3DElec-WL-Dev%3ADealCardDesk~widgetType%3DdealCard~contentType%3Dneo&wid=13.dealCard.OMU_12&otracker=clp_omu_Best%2Bof%2BElectronic%2BDevices_Best%2Bof%2BElectronic%2BDevices_bank-terms-and-conditions-store_12&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Best%2Bof%2BElectronic%2BDevices_NA_wc_view-all_12"><input type="button" value="View all"></a></font></b></th>
+	</tr>
+	<tr>
+		<th align="left" colspan="5"><font size="5px"><a href="">School Bags</a></font><hr></th>
+	</tr>
+
+	<tr>
+		
+		<td align="center">
+			<div class="zoom">
+			<img src="bag1.png" width="50%" class="img">
+			</div>
+		</td>
+		</div>
+		<td align="center">
+			<div class="zoom">
+			<img src="bag2.png" width="50%"class="img">
+			</div>
+		</td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="bag3.png" width="50%"class="img">
+        </td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="bag4.png" width="50%"class="img">
+
+        </td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="bag5.png" width="50%"class="img">
+        </td>
+        
+	</tr>
+	<tr>
+	<td align="center">
+		
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+     <td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+	<td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+	<td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+	<td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+
+      </tr>
+	<tr align="center">
+		<td>Price:<font color="#f216dc">599/-</font></td>
+		<td>Price:<font color="#f216dc">699/-</font></td>
+		<td>Price:<font color="#f216dc">799/-<font></td>
+		<td>Price:<font color="#f216dc">899/-</font></td>
+		<td>Price:<font color="#f216dc">999/-</font></td>
+	</tr>
+	<tr>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+	</tr>
+    </table><br><br>
+    <img src="images (1).jfif" width="32%" height="210px">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="images (3).jfif" width="32%" height="210px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="images (5).jfif" width="32%" height="210px">
+  <table border="0" width="100%">
+     <tr><td align="left" colspan="5"><h2>Best Battery Phone<hr></td>
+     </tr>
+
+    <tr bgcolor="white">
+    	<td align="center">
+    		<div class="zoom">
+    		<img src="mobile1.png" width="50%" class="img">
+    	</div>
+    	</td>
+		<td align="center">
+			<div class="zoom">
+			<img src="mobile2.png" width="50%" class="img">
+		</div>
+		</td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="mobile3.png" width="50%" class="img">
+        </div>
+        </td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="mobile4.png" width="50%" class="img">
+        </div>
+        </td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="images (7).jfif" width="100%" height="150px" class="img">
+        </div>
+        </td>
+    	 </tr>
+    	 <tr>
+    	<td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span>
+	    </td>
+	    <td align="center">
+		
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+	<td align="center">
+		
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+	<td align="center">
+		
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+	<td align="center">
+		
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star "></span>
+		<span class="fa fa-star "></span>
+	</td>
+    	 </tr> 
+    	 <tr align="center">
+		<td>Price:<font color="#f216dc">5999/-</font></td>
+		<td>Price:<font color="#f216dc">6699/-</font></td>
+		<td>Price:<font color="#f216dc">7799/-<font></td>
+		<td>Price:<font color="#f216dc">8899/-</font></td>
+		<td>Price:<font color="#f216dc">9999/-</font></td>
+	</tr>
+	<tr>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+	</tr>
+    	 	
+
+
+    	 
+    </table>
+     
+    <table border="0" width="100%">
+    <tr><td><h2>Electronics Assessories</h2><hr></td>
+    	
+    </tr>
+    </table>
+    <img src="download (6).jfif" width="100%" height="260px" >
+    <table border="0" width="100%">
+    <tr>
+    	<td align="center">
+    		<div class="zoom">
+    		<img src="earphone3.png" width="50%" class="img">
+    	</div>
+    	</td>
+		<td align="center">
+			<div class="zoom">
+			<img src="pendrive4.png" width="50%" class="img">
+		</div>
+		</td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="mouse4.png" width="50%" class="img">
+        </div>
+        </td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="pendrive5.png" width="50%" class="img">
+        </div>
+        </td>
+        <td align="center">
+        	<div class="zoom">
+        	<img src="earphone2.png" width="100%" height="200px" class="img">
+        </div>
+        </td>
+    	</tr>
+    	<tr>
+        <td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span>
+	    </td>
+	    <td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span>
+	    </td>
+	    <td align="center">
+		<span class="fa fa-star checked"style="color:orange"></span>
+		<span class="fa fa-star checked"style="color:orange"></span>
+		<span class="fa fa-star checked"style="color:orange"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span>
+	    </td>
+	    <td align="center">
+		<span class="fa fa-star checked" style="color:pink"></span>
+		<span class="fa fa-star checked"style="color:pink"></span>
+		<span class="fa fa-star checked"style="color:pink"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span>
+	    </td>
+	    <td align="center">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+		<span class="fa fa-star"></span>
+	    </td>
+    	</tr>
+    	<tr>
+    	<td align="center">Price:<font color="#f216dc">199/-</font></td>
+		<td align="center">Price:<font color="#f216dc">299/-</font></td>
+		<td align="center">Price:<font color="#f216dc">399/-<font></td>
+		<td align="center">Price:<font color="#f216dc">499/-</font></td>
+		<td align="center">Price:<font color="#f216dc">599/-</font></td>
+		
+    	</tr>
+    	<tr>
+    		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+    		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+    		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+    		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+    		<th align="center"><input type="text" name="button" value="show details" style="width:80px;height:15px;background-color:#68a4ed"></th>
+    	</tr>
+    	</table><br>
+    	
+    		<p><h3>Flipkart: The One-stop Shopping Destination</h3></p>
+    			<p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</p>
+    			<p><h3>Flipkart Plus</h3></p>
+    			<p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! What's more, you can even use the Flipkart supercoins for a number of exciting services, like:</p>
+    			<p><h3>No Cost EMI</h3></p>
+    			<p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply</p>
+    			<p><h3>EMI on Debit Cards</h3></p>
+    			<p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.
+                </p>
+     <p><h3>What Can You Buy From Flipkart?</h3></p>
+     <p><h3>Mobile Phones</h3></p>
+     <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.
+    </p>
+    <p><h3>Electronic Devices and Accessories</h3></p>
+   <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+
+Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store</p>
+<p><h3>Large Appliances</h3></p>
+<p>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.</p><br>
+
+ <table border="0" width="100%" style="background-color: black" >
+ 	<tr width="50px" style="color:#80868c">
+ 		<th align="left" width="80px" height="20px"><h3>About</h3></th>
+ 		<th align="left" width="30px" height="20px"><h3>Help<h3></th>
+ 		<th align="left" width="50px" height="20px"><h3>Policy</h3></th>
+ 		<th align="left" width="50px" height="20px"><h3>Social</h3></th>
+ 		<th align="left" width="120px" height="20px"><h3>Mail Us</h3></th>
+ 		<th align="left" width="120px" height="20px"><h3>Registerd Office Address:</h3></th>
+ 	</tr>
+ 	<tr style="color:white">
+ 		<td style="color:white" style="font-size:20px">
+ 
+ 		 	<a href="https://www.flipkart.com/helpcentre?otracker=undefined_footer_navlinks">Contact Us<br>
+ 		 	<a href="https://www.flipkart.com/about-us?otracker=undefined_footer_navlinks">About Us</a><br>
+ 		 	<a href="https://www.flipkart">Careers</a><br>
+ 		    <a href="http://stories.flipkart.com/?otracker=undefined_footer_navlinks">Flipkart stories</a><br>
+ 		 	<a href="https://www.flipkart.com/s/press?otracker=undefined_footer_navlinks">Press</a><br>
+   
+        </td>
+        <td style="color:white">
+           <a href="https://www.flipkart.com/pages/payments">
+            Payment<br>
+ 		 	<a href="https://www.flipkart.com/pages/shipping">Shiping</a><br>
+ 		 	<a href="https://www.flipkart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG">Cancellation & Returns</a><br>
+ 		 	<a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a><br>
+ 		 	<a href="https://seller.flipkart.com/fiv?otracker=undefined_footer_navlinks">Report infringement</a><br></a>
+         </td>
+        <td style="color:white">
+        	<br><a href="https://www.flipkart.com/pages/returnpolicy?otracker=undefined_footer_navlinks">
+       Return Policy</a><br>
+       <a href="https://www.flipkart.com/pages/terms?otracker=undefined_footer_navlinks">Terms of Use</a><br>
+       <a href="https://www.flipkart.com/pages/paymentsecurity?otracker=undefined_footer_navlinks">Security</a><br>
+       <a href="https://www.flipkart.com/pages/privacypolicy?otracker=undefined_footer_navlinks">Privacy</a><br>
+       <a href="https://www.flipkart.com/sitemap?otracker=undefined_footer_navlinks">Sitemap</a><br>
+       <a href="https://www.flipkart.com/pages/ewaste-compliance-tnc?otracker=undefined_footer_navlinks">EPR Compliance</a><br>
+       </td>
+        <td style="color:white">
+        	<a href="https://www.facebook.com/flipkart">
+            Facebook</a><br>
+ 		 	<a href="https://www.twitter.com/flipkart">Twitter</a><br>
+ 		 	<a href="https://www.youtube.com/flipkart">You Tube</a><br>
+ 	</td>
+ 	<td style="color:#2149fc">
+ 		Flipkart Internet Private Limited,<br>
+        Buildings Alyssa, Begonia &<br>
+        Clove Embassy Tech Village,<br>
+        Outer Ring Road, Devarabeesanahalli Village,<br>
+        Bengaluru, 560103,<br>
+        Karnataka, India
+   </td>
+   <td style="color:#2149fc">
+   	  Flipkart Internet Private Limited,<br>
+      Buildings Alyssa, Begonia &<br>
+      Clove Embassy Tech Village,<br>
+      Outer Ring Road, Devarabeesanahalli Village,<br>
+      Bengaluru, 560103,<br>
+      Karnataka, India<br>
+      CIN : U51109KA2012PTC066107<br>
+      Telephone: 1800 208 9898
+   </td>
+
+  </tr>
+  <br>
+  <tr >
+  	<td style="color:white" colspan="6" align="center"><h1><hr>Search:<input type="text" name="button" placeholder="Search for product,Brands & More" style="width: 450px;height:20px;">&nbsp;&nbsp;<input type="button" value="search"></h1><h3>Copyright:All right reserved</h3><h2>Design By:PEKAY SOREN</h2></td>
+    
+  </tr>
+
+
+ 	
+
+
+
+
+
+
+
+
+
+ </table>   		
+    		
+    
+
+
+
+
+
+</body>
+</html>
